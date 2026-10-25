@@ -1,0 +1,13 @@
+.site-footer {
+  width: min(calc(100% - 2 * var(--page-gutter)), var(--content-width));
+  margin-inline: auto;
+  padding-block: var(--space-3);
+  border-top: 1px solid var(--color-border);
+  color: var(--color-secondary);
+}
+
+@media (max-width: 640px) {
+  .site-footer {
+    --page-gutter: 16px;
+  }
+}

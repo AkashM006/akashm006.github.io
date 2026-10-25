@@ -1,0 +1,22 @@
+.about-section {
+  padding-block: var(--space-3) var(--space-4);
+  border-top: 1px solid var(--color-border);
+}
+
+.about-section > h2 {
+  margin: 0 0 var(--space-2);
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.about-description {
+  max-width: 640px;
+  margin: 0;
+  color: var(--color-secondary);
+}
+
+@media (max-width: 640px) {
+  .about-section {
+    padding-block: var(--space-2) var(--space-3);
+  }
+}

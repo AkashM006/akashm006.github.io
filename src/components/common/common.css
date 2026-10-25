@@ -1,0 +1,61 @@
+.portfolio-content {
+  width: min(calc(100% - 2 * var(--page-gutter)), var(--content-width));
+  margin-inline: auto;
+  display: grid;
+  gap: var(--space-5);
+  padding-block: var(--space-5);
+}
+
+.portfolio-content ul:not(.tag-list),
+.portfolio-content ol {
+  margin-block: var(--space-2);
+  padding-inline-start: 1.5rem;
+  line-height: 1.65;
+}
+
+.portfolio-content ul:not(.tag-list) > li,
+.portfolio-content ol > li {
+  padding-inline-start: 0.25rem;
+}
+
+.portfolio-content ul:not(.tag-list) > li + li,
+.portfolio-content ol > li + li {
+  margin-block-start: 0.5rem;
+}
+
+.portfolio-content ul:not(.tag-list) > li::marker {
+  color: var(--color-accent);
+  font-size: 0.8em;
+}
+
+.portfolio-content ol > li::marker {
+  color: var(--color-secondary);
+  font-variant-numeric: tabular-nums;
+}
+
+.portfolio-content ul:not(.tag-list) ul,
+.portfolio-content ol ul {
+  margin-block: 0.5rem;
+  list-style-type: circle;
+}
+
+.portfolio-content ol ol,
+.portfolio-content ul ol {
+  margin-block: 0.5rem;
+  list-style-type: lower-alpha;
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-1) var(--space-2);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media (max-width: 640px) {
+  .portfolio-content {
+    --page-gutter: 16px;
+  }
+}

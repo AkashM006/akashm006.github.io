@@ -1,0 +1,65 @@
+.contact-section {
+  padding-block: var(--space-3) var(--space-4);
+  border-top: 1px solid var(--color-border);
+}
+
+.contact-section > h2 {
+  margin: 0 0 var(--space-2);
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.contact-invitation {
+  max-width: 640px;
+  margin: 0;
+  color: var(--color-secondary);
+}
+
+.portfolio-content ul.contact-links {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-2);
+  margin: var(--space-3) 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.portfolio-content ul.contact-links > li {
+  display: grid;
+  gap: 4px;
+  margin: 0;
+  padding: var(--space-1) 0 0;
+  border-top: 1px solid var(--color-border);
+}
+
+.contact-placeholder {
+  color: var(--color-secondary);
+  font-size: 0.875rem;
+}
+
+a.contact-placeholder {
+  width: fit-content;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  text-decoration-color: transparent;
+  transition:
+    color 160ms ease,
+    text-decoration-color 160ms ease;
+}
+
+a.contact-placeholder:hover {
+  color: var(--color-accent);
+  text-decoration-color: currentColor;
+}
+
+@media (max-width: 640px) {
+  .contact-section {
+    padding-block: var(--space-2) var(--space-3);
+  }
+
+  .portfolio-content ul.contact-links {
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--space-1);
+    margin-top: var(--space-2);
+  }
+}

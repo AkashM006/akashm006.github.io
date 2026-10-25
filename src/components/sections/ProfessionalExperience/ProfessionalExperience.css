@@ -1,0 +1,192 @@
+.experience-section {
+  padding-block: var(--space-4) var(--space-5);
+  border-top: 1px solid var(--color-border);
+}
+
+.experience-section-label {
+  margin: 0 0 var(--space-1);
+  color: var(--color-accent);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.experience-section > h2 {
+  max-width: 760px;
+  margin: 0 0 var(--space-3);
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 1.15;
+}
+
+.experience-entry {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.experience-header {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: var(--space-3);
+  padding-bottom: var(--space-3);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.experience-header h3 {
+  max-width: 720px;
+  margin: 0;
+  font-size: 1.375rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.experience-header h3 span {
+  color: var(--color-secondary);
+  font-weight: 400;
+}
+
+.experience-employer {
+  margin: 4px 0 0;
+  color: var(--color-secondary);
+}
+
+.experience-introduction {
+  max-width: 760px;
+  margin: 0;
+  color: var(--color-secondary);
+  font-size: 1.0625rem;
+  line-height: 1.7;
+}
+
+.experience-technologies h4 {
+  color: var(--color-secondary);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.experience-technologies {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: var(--space-1) var(--space-2);
+}
+
+.experience-technologies h4 {
+  margin: 0;
+}
+
+.experience-technologies .tag-list {
+  margin: 0;
+}
+
+.experience-technologies .tag-list li {
+  color: var(--color-secondary);
+  font-size: 0.875rem;
+}
+
+.portfolio-content ol.experience-achievements {
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.portfolio-content ol.experience-achievements > li {
+  position: relative;
+  margin: 0;
+  padding: var(--space-3) 0 var(--space-3) var(--space-3);
+  border-top: 1px solid var(--color-border);
+}
+
+.portfolio-content ol.experience-achievements > li:first-child {
+  padding-block: var(--space-4);
+}
+
+.portfolio-content ol.experience-achievements > li::before {
+  position: absolute;
+  top: calc(var(--space-3) + 0.12em);
+  left: 0;
+  color: var(--color-accent);
+  content: counter(list-item, decimal-leading-zero);
+  font-size: 0.75rem;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+.portfolio-content ol.experience-achievements > li:first-child::before {
+  top: calc(var(--space-4) + 0.12em);
+}
+
+.experience-achievements h4 {
+  max-width: 700px;
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.experience-achievements p {
+  max-width: 760px;
+  margin: var(--space-1) 0 0;
+  color: var(--color-secondary);
+  line-height: 1.6;
+}
+
+.experience-achievements strong {
+  color: var(--color-text);
+  font-size: 1.1em;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.experience-achievements > li:first-child strong {
+  color: var(--color-accent);
+  font-size: 1.2em;
+}
+
+.experience-achievements > li:last-child {
+  padding-bottom: 0;
+}
+
+@media (max-width: 640px) {
+  .experience-section {
+    padding-block: var(--space-3);
+  }
+
+  .experience-section > h2 {
+    margin-bottom: var(--space-3);
+    font-size: 2rem;
+  }
+
+  .experience-header {
+    flex-direction: column;
+    gap: var(--space-2);
+  }
+
+  .experience-header h3 {
+    font-size: 1.25rem;
+  }
+
+  .experience-introduction {
+    font-size: 1rem;
+  }
+
+  .portfolio-content ol.experience-achievements > li {
+    padding-block: var(--space-2);
+  }
+
+  .portfolio-content ol.experience-achievements > li:first-child {
+    padding-block: var(--space-3);
+  }
+
+  .portfolio-content ol.experience-achievements > li::before {
+    top: calc(var(--space-2) + 0.12em);
+  }
+
+  .portfolio-content ol.experience-achievements > li:first-child::before {
+    top: calc(var(--space-3) + 0.12em);
+  }
+}

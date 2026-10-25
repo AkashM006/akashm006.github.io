@@ -1,0 +1,43 @@
+.technical-skills {
+  padding-block: var(--space-3) var(--space-4);
+  border-top: 1px solid var(--color-border);
+}
+
+.technical-skills > h2 {
+  margin: 0 0 var(--space-3);
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.skill-groups {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-3);
+  max-width: 760px;
+}
+
+.skill-group h3 {
+  margin: 0 0 var(--space-1);
+  color: var(--color-secondary);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.skill-group .tag-list {
+  gap: var(--space-1) var(--space-2);
+  margin: 0;
+}
+
+.skill-group .tag-list li {
+  color: var(--color-text);
+  font-size: 0.9375rem;
+}
+
+@media (max-width: 640px) {
+  .skill-groups {
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--space-2);
+  }
+}
