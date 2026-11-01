@@ -1,0 +1,30 @@
+.image-lightbox-trigger {
+  display: block;
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  background: transparent;
+  text-align: left;
+}
+
+.image-lightbox-trigger img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: opacity 160ms ease;
+}
+
+.image-lightbox-trigger:hover img {
+  opacity: 0.88;
+}
+
+.image-lightbox {
+  --yarl__container_background_color: rgb(23 23 23 / 96%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .image-lightbox-trigger img {
+    transition: none;
+  }
+}

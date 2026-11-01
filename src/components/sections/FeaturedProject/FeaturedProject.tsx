@@ -1,4 +1,5 @@
 import "./FeaturedProject.css";
+import ImageLightbox from "../../common/ImageLightbox/ImageLightbox";
 
 function FeaturedProject() {
   return (
@@ -18,12 +19,20 @@ function FeaturedProject() {
         </header>
 
         <div className="project-layout">
-          <figure className="screenshot-placeholder">
-            <div aria-hidden="true" className="placeholder-index">
-              01
-            </div>
-            <p className="placeholder-label">Screenshot placeholder</p>
-            <figcaption>No app screenshots have been provided yet.</figcaption>
+          <figure className="project-preview">
+            <ImageLightbox
+              images={[
+                {
+                  alt: "Track It finance app collage showing the home, savings bucket, actions, and monthly reports screens",
+                  src: "/track-it.png",
+                },
+              ]}
+              thumbnailLabel="Open Track It app screenshots"
+            />
+            <figcaption>
+              A look at the app's home, savings, transactions, and reporting
+              screens.
+            </figcaption>
           </figure>
 
           <div className="project-details">
